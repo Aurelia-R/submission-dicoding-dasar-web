@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Panduan Permainan Werewolf</title>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h1 class="main-title">Werewolf Game</h1>
+        <p class="subtitle">Permainan deduksi yang seru dan menegangkan</p>
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <ul class="nav-menu">
+            <li><a href="#characters">Karakter</a></li>
+            <li><a href="#rules">Cara Main</a></li>
+            <li><a href="#tips">Tips</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        
+        <div class="game-requirements">
+          <h3>Syarat Bermain</h3>
+          <ul>
+            <li>Minimal 4-8pemain</li>
+            <li>Durasi: 15-60 menit</li>
+            <li>Usia: 8+ tahun</li>
+          </ul>
+        </div>
+        
+        <h2>Karakter dalam Permainan Werewolf</h2>
+        <div class="characters-grid">
+          <div class="character-card">
+            <div class="card-content">
+            
+              <h3> Moderator</h3>
+              <img src="Assets/moderator.svg" alt="Moderator" width="100"><br><br>
+              <p>
+                membagi peran, mengatur alur, dan mengumumkan hasil
+              </p>
+            </div>
+          </div>
+          <div class="character-card">
+            
+            <div class="card-content">
+              <h3> Werewolf</h3>
+              <img src="Assets/werewolf.svg" alt="Werewolf" width="100"><br><br>
+              <p>
+                Membunuh pemain lain setiap malam. Tujuan: Menghabisi semua
+                warga desa.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            
+            <div class="card-content">
+              <h3>Villager</h3>
+              <img src="Assets/villager.svg" alt="Villager" width="100">
+              <p>
+                Warga biasa yang harus menebak siapa werewolf untuk
+                Menghabisi semua werewolf. 
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            
+            <div class="card-content">
+              <h3>Seer</h3>
+              <img src="Assets/seer.svg" alt="Seer" width="100">
+              <p>
+                Bisa mengecek 1 pemain setiap malam untuk mengetahui
+                identitasnya.
+              </p>
+            </div>
+          </div>
+
+          <div class="character-card">
+            
+            <div class="card-content">
+              <h3>Guardian</h3>
+              <img src="Assets/guardian.svg" alt="Guardian" width="100">
+              <p>
+                Melindungi satu pemain dari serangan werewolf setiap malam.
+                
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="dropdown">
+          <button onclick="toggleDropdown()">Lihat Tata Cara Main</button>
+          <div id="rules" class="dropdown-content">
+            <ol>
+              <li><strong>Penentuan jumlah werewolf</strong><br>
+                Untuk permainan dengan ≤ 7 pemain -> 1 werewolf,  
+                Untuk ≥ 8 pemain -> bisa menggunakan 2 werewolf.</li>
+              <li><strong>Malam Hari</strong><br>
+                Semua pemain menutup mata. Moderator memanggil:  
+                "Werewolf, buka mata dan pilih satu korban."  
+                Setelah werewolf memilih, moderator akan menyuruh werewolf menutup mata kembali.  
+                Kemudian moderator memanggil: "Seer, buka mata dan tunjuk satu orang untuk diperiksa."
+                Selanjutnya moderator memanggil: "Guardian, buka mata dan pilih satu pemain untuk dilindungi."
+                Jika guardian melindungi pemain yang diserang werewolf, maka pemain itu selamat.</li>
+              <li><strong>Pagi Hari</strong><br>
+                Semua dibangunkan moderator. Moderator mengumumkan siapa korban malam tadi (jika tidak dilindungi guardian).
+                Korban wajib diam dan tidak ikut berdiskusi.
+                Pemain yang masih hidup berdiskusi, saling tuduh-menuduh, dan kemudian memilih satu orang melalui voting untuk dieliminasi.</li>
+              <li><strong>Kelanjutan & Kemenangan</strong><br>
+                Jika yang dieliminasi adalah werewolf -> villager menang.
+                Jika yang dieliminasi bukan werewolf -> permainan berlanjut dengan malam -> siang -> dst.
+                Jika jumlah werewolf ≥ jumlah pemain bukan werewolf -> werewolf menang.</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="aside-content">
+          <h2>Tips Bermain</h2>
+
+          <div class="tips-section">
+            <ul>
+              <li><strong>Bagi Villager:</strong> Amati perilaku pemain lain, bekerja sama, jangan mudah terpancing manipulasi.</li>
+              <li><strong>Bagi Werewolf:</strong> Jangan terlalu menonjol, buat keraguan terhadap pemain lain, bunuh seer atau guardian jika memungkinkan.</li>
+              <li><strong>Bagi Seer:</strong> Peroleh informasi secara hati-hati, jangan langsung mengungkapkan peranmu kecuali situasi sangat mendesak.</li>
+              <li><strong>Bagi Guardian:</strong> Pilih target perlindungan secara strategis, usahakan melindungi pemain penting seperti seer.</li>
+              <li><strong>Tips Umum:</strong> Pikir cepat, adaptasi terhadap perubahan, dan jaga ekspresi agar tidak membocorkan identitasmu.</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>© 2025 Aurelia Rana</p>
+    </footer>
+
+    <script>
+      function toggleDropdown() {
+        const rules = document.getElementById("rules");
+        if (rules.style.display === "block") {
+          rules.style.display = "none";
+        } else {
+          rules.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

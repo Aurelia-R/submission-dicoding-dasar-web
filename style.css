@@ -1,0 +1,297 @@
+/* Reset dan Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  text-align: center;
+}
+
+.head {
+  background:#c82333;
+  color: white;
+  padding: 50px 30px;
+  margin-bottom: 0;
+}
+
+.main-title {
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+
+.navbar {
+  background-color: #dc3545;
+
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.nav-menu a:hover {
+  color: #ffc107;
+  background-color: rgba(224, 139, 139, 0.1);
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 70px 40px;
+  gap: 30px;
+}
+
+article {
+  flex: 2;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+
+aside {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+  text-align: center;
+}
+
+h2 {
+  color: #dc3545;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+
+h3 {
+  color: #495057;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.game-requirements {
+  background: #e3e3e3;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.game-requirements ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.game-requirements li {
+  margin-bottom: 8px;
+  color: #495057;
+  font-size: 16px;
+}
+
+.characters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.character-card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  width: 180px;
+  height: 280px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+
+.card-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 19px;
+}
+
+.card-content p {
+  color: #495057;
+  font-size: 15px;
+}
+
+.dropdown {
+  margin-top: 32px;
+}
+
+.dropdown button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.dropdown button:hover {
+  background: #c82333;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 16px;
+  background: #f8f9fa;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.dropdown-content ol {
+  padding-left: 24px;
+}
+
+.dropdown-content li {
+  margin-bottom: 8px;
+  color: #495057;
+}
+
+.tips-section {
+  text-align: left;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.tips-section ul {
+  padding-left: 20px;
+}
+
+.tips-section li {
+  margin-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .nav-menu {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .characters-grid {
+    justify-content: center;
+  }
+
+  .character-card {
+    width: 160px;
+    height: 260px;
+  }
+
+  .requirements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    margin: 16px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-title {
+    font-size: 24px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .character-card {
+    width: 150px;
+    height: 240px;
+    margin-bottom: 16px;
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .head {
+    padding: 32px 16px;
+  }
+}
