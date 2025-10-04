@@ -213,6 +213,33 @@ h3 {
   color: #495057;
 }
 
+.author-info {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #dc3545;
+}
+
+.author-info img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #dc3545;
+}
+
+.author-info h3 {
+  color: #dc3545;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.author-info p {
+  color: #495057;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 .tips-section {
   text-align: left;
   padding: 10px;
